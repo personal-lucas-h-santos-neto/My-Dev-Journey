@@ -1,5 +1,5 @@
 {
-  "periods": ["FY25", "FY26", "FY27"],
+  "periods": ["FY26", "FY27"],
   "goals": [
     {
       "id": "goal-1",
@@ -8,35 +8,29 @@
       "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
-        "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+        "src/assets/FY_26/trabalho_equipe_1.png",
+        "src/assets/FY_26/trabalho_equipe_2.png",
+        "src/assets/FY_26/trabalho_equipe_3.png",
+        "src/assets/FY_26/trabalho_equipe_4.png",
+        "src/assets/FY_26/trabalho_equipe_5.png"
       ],
       "subgoals": [
         {
-          "title": "Documentar processos internos do projeto",
+          "title": "Apoiar a equipe em processos internos",
           "completed": true,
           "evidence": [
-            "Configuração do repositório de documentação",
-            "Definição de workflow para atualização",
-            "Checklist de revisão aprovado"
+            "Realizei teste de performance de nova abordagem de desenvolvimento.",
+            "Documentei soluções e desenvolvimentos de atividades.",
+            "Auxiliei colegas na utilização de ferramentas.",
+            "Recebi Feedback positivo sobre minha atuação/performance através do gestor do projeto."
           ]
         },
         {
-          "title": "Realizar 3 reuniões de revisão de progresso",
+          "title": "Orientar colegas em solução técnica",
           "completed": true,
           "evidence": [
-            "Reuniões realizadas com clientes",
-            "Ações definidas em ata",
-            "Feedbacks incorporados no plano"
-          ]
-        },
-        {
-          "title": "Orientar dois colegas em solução técnica",
-          "completed": false,
-          "evidence": [
-            "Sessão de pair programming agendada",
-            "Documento de transferência de conhecimento em produção"
+            "Introduzi a plataforma Verdi-Flows para um grupo de desenvolvimento",
+            "Realizei sessão de overview sobre N8N"
           ]
         }
       ]
@@ -45,34 +39,34 @@
       "id": "goal-2",
       "title": "Certificação",
       "description": "Obter certificação relevante para o cargo e trabalho desempenhado.",
-      "deadline": "2027-03-15",
+      "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80"
+        "src/assets/FY_26/certificado_1.png",
+        "src/assets/FY_26/certificado_2.png",
+        "src/assets/FY_26/certificado_3.png"
       ],
       "subgoals": [
         {
-          "title": "Finalizar módulo básico",
-          "completed": true,
+          "title": "Ingressar em grupo de estudos",
+          "completed": false,
           "evidence": [
-            "Vídeos, quizzes e exercícios concluídos",
-            "Resumo de tópicos principais registrado"
+            "Entrei no grupo de estudos de certificação Anthropic.",
+            "Participei das reuniões de estudo coletivo às quartas e sextas."
           ]
         },
         {
-          "title": "Realizar simulado final",
+          "title": "Realizar simulados",
           "completed": false,
           "evidence": [
-            "Simulados em andamento",
-            "Áreas de melhoria identificadas"
+            
           ]
         },
         {
           "title": "Marcar prova oficial",
           "completed": false,
           "evidence": [
-            "Calendário de prova definido",
-            "Documentos pessoais prontos para envio"
+            
           ]
         }
       ]
@@ -81,7 +75,7 @@
       "id": "goal-3",
       "title": "Aprimoramento Técnico",
       "description": "Aprofundar conceitos de IA e realizar entrega de projeto Meli/Accenture.",
-      "deadline": "2026-12-31",
+      "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
         "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
@@ -97,21 +91,76 @@
           ]
         },
         {
-          "title": "Criar protótipo funcional do dashboard",
-          "completed": true,
-          "evidence": [
-            "Tela principal implementada",
-            "Fluxo de navegação testado pelo time"
-          ]
-        },
-        {
-          "title": "Testar integração com API externa",
+          "title": "Criar sistema de IA em ambiente Accenture",
           "completed": false,
           "evidence": [
-            "Endpoint mapeado",
-            "Plano de testes de conexão definido"
+            "Iniciei projeto 'My-Dev-Journey'.",
+            "Realizei integração com modelos de LLM local via Ollama."
           ]
         }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-mtm",
+      "title": "Relatório MTM",
+      "subtitle": "Painel de acompanhamento de metas com agente de IA local",
+      "period": "FY26",
+      "banner": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
+      "description": "Aplicação em React + TypeScript para acompanhar metas de desenvolvimento por ano fiscal, exibindo submetas, evidências e comprovações visuais. Inclui um agente de chat integrado a modelos de LLM executados localmente via Ollama, permitindo consultas contextuais sem depender de serviços externos.",
+      "tools": [
+        { "name": "React", "logo": "react", "color": "20232A", "logoColor": "61DAFB" },
+        { "name": "TypeScript", "logo": "typescript", "color": "3178C6", "logoColor": "white" },
+        { "name": "Vite", "logo": "vite", "color": "646CFF", "logoColor": "white" },
+        { "name": "Ollama", "logo": "ollama", "color": "000000", "logoColor": "white" },
+        { "name": "Node.js", "logo": "nodedotjs", "color": "5FA04E", "logoColor": "white" },
+        { "name": "Git", "logo": "git", "color": "F05032", "logoColor": "white" }
+      ],
+      "challenges": [
+        "Integrar um modelo de linguagem local mantendo a aplicação leve e responsiva no navegador.",
+        "Tratar cenários em que o Ollama está offline sem quebrar a experiência de uso.",
+        "Estruturar os dados de metas de forma flexível para novos períodos avaliativos."
+      ],
+      "evolution": [
+        "Estruturação inicial do dashboard e do modelo de dados das metas.",
+        "Inclusão de carrossel de evidências e ampliação de imagens em lightbox.",
+        "Diferenciação visual de status das submetas e barra de progresso cromática.",
+        "Adição da vitrine de projetos para detalhar experiências."
+      ],
+      "results": [
+        "Visão centralizada e navegável do progresso por ano fiscal.",
+        "Consultas assistidas por IA rodando 100% localmente.",
+        "Base reutilizável para novas metas e projetos sem retrabalho."
+      ]
+    },
+    {
+      "id": "proj-verdi-flows",
+      "title": "Integração de Alertas — Verdi-Flows",
+      "subtitle": "Automação de notificações para entrega Meli/Accenture",
+      "period": "FY26",
+      "banner": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
+      "description": "Fluxo de automação para disparo de alertas por e-mail a partir de eventos de negócio, construído sobre a plataforma Verdi-Flows e orquestrado com N8N. O objetivo é reduzir o tempo de resposta a ocorrências e padronizar a comunicação com os times envolvidos na entrega.",
+      "tools": [
+        { "name": "N8N", "logo": "n8n", "color": "EA4B71", "logoColor": "white" },
+        { "name": "Node.js", "logo": "nodedotjs", "color": "5FA04E", "logoColor": "white" },
+        { "name": "REST API", "logo": "openapiinitiative", "color": "6BA539", "logoColor": "white" },
+        { "name": "SMTP", "logo": "maildotru", "color": "005FF9", "logoColor": "white" }
+      ],
+      "challenges": [
+        "Mapear os gatilhos de negócio que justificam o envio de um alerta.",
+        "Garantir entregabilidade e evitar duplicidade de notificações.",
+        "Integrar a plataforma Verdi-Flows a serviços externos de e-mail."
+      ],
+      "evolution": [
+        "Levantamento do requisito de alertas junto aos stakeholders.",
+        "Prototipagem do fluxo de disparo no ambiente Verdi-Flows.",
+        "Sessão de overview da solução com o time de desenvolvimento."
+      ],
+      "results": [
+        "Notificações automáticas para eventos críticos da entrega.",
+        "Padronização da comunicação entre os times.",
+        "Redução do trabalho manual de acompanhamento."
       ]
     }
   ]

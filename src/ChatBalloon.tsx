@@ -16,6 +16,13 @@ function ChatBalloon() {
     };
   }, []);
 
+  const statusClass = ollamaOnline ? 'online' : ollamaOnline === false ? 'offline' : 'unknown';
+  const statusText = ollamaOnline
+    ? 'Ollama conectado'
+    : ollamaOnline === false
+      ? 'Ollama offline'
+      : 'Verificando...';
+
   return (
     <div className={`chat-balloon ${open ? 'open' : 'closed'}`}>
       <button
@@ -25,15 +32,33 @@ function ChatBalloon() {
         title={open ? 'Fechar agente' : 'Abrir agente'}
       >
         <span className="chat-icon">💬</span>
-        <span className={`status-dot ${ollamaOnline ? 'online' : ollamaOnline === false ? 'offline' : 'unknown'}`} />
+        <span className={`status-dot ${statusClass}`} />
       </button>
 
       {open && (
         <div className="chat-balloon-panel">
-          <ChatPanel />
-          <div className="chat-footer-note">
-            Respostas tentam usar Ollama local (<strong>{ollamaOnline ? 'conectado' : ollamaOnline === false ? 'offline' : 'verificando...'}</strong>)
+          <div className="chat-panel-header">
+            <div className="chat-panel-avatar">🤖</div>
+            <div className="chat-panel-heading">
+              <strong>Agente conversacional</strong>
+              <span className={`chat-status ${statusClass}`}>
+                <span className="chat-status-dot" />
+                {statusText}
+              </span>
+            </div>
+            <button
+              type="button"
+              className="chat-panel-close"
+              onClick={() => setOpen(false)}
+              aria-label="Fechar agente"
+            >
+              ×
+            </button>
           </div>
+
+          <ChatPanel />
+
+          <div className="chat-footer-note">Respostas baseadas apenas no conteúdo exibido no site.</div>
         </div>
       )}
     </div>

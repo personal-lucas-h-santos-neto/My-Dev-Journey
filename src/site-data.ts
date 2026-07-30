@@ -1,4 +1,4 @@
-export const periods = ['FY25', 'FY26', 'FY27'];
+export const periods = ['FY26', 'FY27'];
 
 export const goals = [
   {
