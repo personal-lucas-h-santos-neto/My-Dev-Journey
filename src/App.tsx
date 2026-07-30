@@ -3,6 +3,12 @@ import ChatBalloon from './ChatBalloon';
 import Vitrine from './Vitrine';
 import siteData from './site-data.json';
 
+const BASE = import.meta.env.BASE_URL;
+function resolveImage(path: string): string {
+  if (path.startsWith('http')) return path;
+  return BASE + path;
+}
+
 type Tab = 'metas' | 'vitrine';
 
 type Subgoal = {
@@ -279,7 +285,7 @@ function App() {
                           onClick={() => setLightbox({ goalId: goal.id, index: currentImageIndex })}
                           aria-label="Ampliar imagem"
                         >
-                          <img src={goal.images[currentImageIndex]} alt={`${goal.title} comprovação ${currentImageIndex + 1}`} />
+                          <img src={resolveImage(goal.images[currentImageIndex])} alt={`${goal.title} comprovação ${currentImageIndex + 1}`} />
                           <span className="carousel-expand-hint">⤢</span>
                         </button>
                         <button className="carousel-control next" onClick={() => changeSlide(goal.id, 'next')}>
@@ -319,7 +325,7 @@ function App() {
               {total > 1 && (
                 <button className="lightbox-nav lightbox-prev" onClick={prev} aria-label="Anterior">‹</button>
               )}
-              <img src={src} alt={`${goal.title} comprovação ${lightbox.index + 1}`} className="lightbox-img" />
+              <img src={resolveImage(src)} alt={`${goal.title} comprovação ${lightbox.index + 1}`} className="lightbox-img" />
               {total > 1 && (
                 <button className="lightbox-nav lightbox-next" onClick={next} aria-label="Próxima">›</button>
               )}

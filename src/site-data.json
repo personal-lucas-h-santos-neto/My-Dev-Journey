@@ -8,11 +8,11 @@
       "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
-        "src/assets/FY_26/trabalho_equipe_1.png",
-        "src/assets/FY_26/trabalho_equipe_2.png",
-        "src/assets/FY_26/trabalho_equipe_3.png",
-        "src/assets/FY_26/trabalho_equipe_4.png",
-        "src/assets/FY_26/trabalho_equipe_5.png"
+        "assets/FY_26/trabalho_equipe_1.png",
+        "assets/FY_26/trabalho_equipe_2.png",
+        "assets/FY_26/trabalho_equipe_3.png",
+        "assets/FY_26/trabalho_equipe_4.png",
+        "assets/FY_26/trabalho_equipe_5.png"
       ],
       "subgoals": [
         {
@@ -42,9 +42,9 @@
       "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
-        "src/assets/FY_26/certificado_1.png",
-        "src/assets/FY_26/certificado_2.png",
-        "src/assets/FY_26/certificado_3.png"
+        "assets/FY_26/certificado_1.png",
+        "assets/FY_26/certificado_2.png",
+        "assets/FY_26/certificado_3.png"
       ],
       "subgoals": [
         {
