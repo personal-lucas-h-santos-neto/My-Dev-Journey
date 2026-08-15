@@ -1,4 +1,5 @@
 import { useMemo, useState } from 'react';
+import accGtWhite from './assets/brand/acc-gt-white.svg';
 import { askAgent } from './agent';
 
 type SourceType = 'ollama' | 'fallback' | 'unknown' | null;
@@ -68,7 +69,9 @@ function ChatPanel() {
 
         {answer ? (
           <div className="chat-msg chat-msg--bot">
-            <div className="chat-avatar">🤖</div>
+            <div className="chat-avatar">
+              <img src={accGtWhite} alt="" />
+            </div>
             <div className="chat-bubble chat-bubble--bot">
               <div className="response-header">
                 <span className="response-title">Resposta</span>
@@ -85,7 +88,9 @@ function ChatPanel() {
           </div>
         ) : loading ? (
           <div className="chat-msg chat-msg--bot">
-            <div className="chat-avatar">🤖</div>
+            <div className="chat-avatar">
+              <img src={accGtWhite} alt="" />
+            </div>
             <div className="chat-bubble chat-bubble--bot">
               <div className="chat-typing">
                 <span />

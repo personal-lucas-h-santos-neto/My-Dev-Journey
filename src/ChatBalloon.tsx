@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import ChatPanel from './ChatPanel';
+import accGtWhite from './assets/brand/acc-gt-white.svg';
 import { checkOllamaAvailable } from './agent';
 
 function ChatBalloon() {
@@ -38,7 +39,9 @@ function ChatBalloon() {
       {open && (
         <div className="chat-balloon-panel">
           <div className="chat-panel-header">
-            <div className="chat-panel-avatar">🤖</div>
+            <div className="chat-panel-avatar">
+              <img src={accGtWhite} alt="" />
+            </div>
             <div className="chat-panel-heading">
               <strong>Agente conversacional</strong>
               <span className={`chat-status ${statusClass}`}>

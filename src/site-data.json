@@ -1,5 +1,12 @@
 {
   "periods": ["FY26", "FY27"],
+  "user": {
+    "name": "Lucas Henrique Santos Neto",
+    "email": "lucas.h.santos.neto@accenture.com",
+    "currentProject": "Mercado Livre/Mercado Pago",
+    "joinDate": "2025-10-06",
+    "avatar": "assets/perfil/perfil.png"
+  },
   "goals": [
     {
       "id": "goal-1",
@@ -12,17 +19,20 @@
         "assets/FY_26/trabalho_equipe_2.png",
         "assets/FY_26/trabalho_equipe_3.png",
         "assets/FY_26/trabalho_equipe_4.png",
-        "assets/FY_26/trabalho_equipe_5.png"
+        "assets/FY_26/trabalho_equipe_5.png",
+        "assets/FY_26/trabalho_equipe_6.png",
+        "assets/FY_26/trabalho_equipe_7.png"
       ],
       "subgoals": [
         {
           "title": "Apoiar a equipe em processos internos",
           "completed": true,
           "evidence": [
-            "Realizei teste de performance de nova abordagem de desenvolvimento.",
-            "Documentei soluções e desenvolvimentos de atividades.",
-            "Auxiliei colegas na utilização de ferramentas.",
-            "Recebi Feedback positivo sobre minha atuação/performance através do gestor do projeto."
+            "Realizei teste de performance de nova abordagem de desenvolvimento",
+            "Documentei soluções e desenvolvimentos de atividades",
+            "Auxiliei colegas na utilização de ferramentas",
+            "Recebi Feedback positivo sobre minha atuação/performance através do gestor do projeto",
+            "Compartilhei template de relatório de atividades semanais com a equipe para que pudessem usar e criar derivados"
           ]
         },
         {
@@ -49,10 +59,10 @@
       "subgoals": [
         {
           "title": "Ingressar em grupo de estudos",
-          "completed": false,
+          "completed": true,
           "evidence": [
-            "Entrei no grupo de estudos de certificação Anthropic.",
-            "Participei das reuniões de estudo coletivo às quartas e sextas."
+            "Entrei no grupo de estudos de certificação Anthropic",
+            "Participei das reuniões de estudo coletivo às quartas e sextas"
           ]
         },
         {
@@ -78,24 +88,26 @@
       "deadline": "2026-08-01",
       "period": "FY26",
       "images": [
-        "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80",
-        "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80"
+        "assets/FY_26/aprimoramento_tecnico_1.png",
+        "assets/FY_26/aprimoramento_tecnico_2.png",
+        "assets/FY_26/aprimoramento_tecnico_3.png",
+        "assets/FY_26/aprimoramento_tecnico_4.png"
       ],
       "subgoals": [
         {
-          "title": "Mapear requisitos de IA e integrá-los ao fluxo",
+          "title": "Criar sistema de IA em ambiente Meli",
           "completed": true,
           "evidence": [
-            "Entrevista com stakeholders realizada",
-            "Requisitos documentados e validados"
+            "Sistema com extrator de informações de reportes bancários",
+            "Sistema com LLM para avaliação de qualidade de reunião entre cliente e vendedor",
+            "Projeto com Agente Conversacional para sanar dúvidas sobre Reportes Regulatórios"
           ]
         },
         {
           "title": "Criar sistema de IA em ambiente Accenture",
-          "completed": false,
+          "completed": true,
           "evidence": [
-            "Iniciei projeto 'My-Dev-Journey'.",
-            "Realizei integração com modelos de LLM local via Ollama."
+            "Realizei integração com modelos de LLM local via Ollama para o projeto 'My-Dev-Journey'."
           ]
         }
       ]
@@ -104,64 +116,166 @@
   "projects": [
     {
       "id": "proj-mtm",
-      "title": "Relatório MTM",
-      "subtitle": "Painel de acompanhamento de metas com agente de IA local",
+      "title": "Conciliação MtM Derivativos",
+      "subtitle": "Apuração de MTMs de derivativos (NDF/SWAP) via base consolidada no BigQuery.",
       "period": "FY26",
-      "banner": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1600&q=80",
-      "description": "Aplicação em React + TypeScript para acompanhar metas de desenvolvimento por ano fiscal, exibindo submetas, evidências e comprovações visuais. Inclui um agente de chat integrado a modelos de LLM executados localmente via Ollama, permitindo consultas contextuais sem depender de serviços externos.",
+      "banner": "assets/FY_26/projeto_mtm.png",
+      "description": "A apuração mensal de MTMs para 338 derivativos é um processo manual, demorado e suscetível a erros, que consome aproximadamente 3 horas por fechamento. Atulamente, o processo depende do tratamento de documentos de suporte (CSVs, PDFs) de bancos. Dessa forma, a solução visa integrar a ingestão de documentos via e-mail e upload manual, eliminando erros operacionais e reduzindo significativamente o tempo de fechamento mensal.",
       "tools": [
-        { "name": "React", "logo": "react", "color": "20232A", "logoColor": "61DAFB" },
-        { "name": "TypeScript", "logo": "typescript", "color": "3178C6", "logoColor": "white" },
-        { "name": "Vite", "logo": "vite", "color": "646CFF", "logoColor": "white" },
-        { "name": "Ollama", "logo": "ollama", "color": "000000", "logoColor": "white" },
-        { "name": "Node.js", "logo": "nodedotjs", "color": "5FA04E", "logoColor": "white" },
-        { "name": "Git", "logo": "git", "color": "F05032", "logoColor": "white" }
+        { "name": "BigQuery", "logo": "googlebigquery", "color": "669DF6", "logoColor": "white" },
+        { "name": "VerdiFlows", "logo": "", "color": "7500C0", "logoColor": "white" },
+        { "name": "DataMesh", "logo": "", "color": "0F766E", "logoColor": "white" },
+        { "name": "Google Sheets", "logo": "googlesheets", "color": "34A853", "logoColor": "white" },
+        { "name": "Google Drive", "logo": "googledrive", "color": "4285F4", "logoColor": "white" },
+        { "name": "Gmail", "logo": "gmail", "color": "EA4335", "logoColor": "white" }
       ],
       "challenges": [
-        "Integrar um modelo de linguagem local mantendo a aplicação leve e responsiva no navegador.",
-        "Tratar cenários em que o Ollama está offline sem quebrar a experiência de uso.",
-        "Estruturar os dados de metas de forma flexível para novos períodos avaliativos."
+        "Primeiro contato com diversas ferramentas do ecossistema Meli: DataMesh, VerdiFlows e BigQuery.",
+        "Adaptação ao ritmo e à organização da equipe, incluindo solicitação de acessos e imersão no negócio, nos dados e na solução proposta.",
+        "Entendimento da solução inicial deixada pela equipe anterior e identificação de pontos de melhoria.",
+        "Pivotagem da solução para abranger o escopo completo: centralização dos MtM de 7 bancos."
       ],
       "evolution": [
-        "Estruturação inicial do dashboard e do modelo de dados das metas.",
-        "Inclusão de carrossel de evidências e ampliação de imagens em lightbox.",
-        "Diferenciação visual de status das submetas e barra de progresso cromática.",
-        "Adição da vitrine de projetos para detalhar experiências."
+        "Adaptação à rotina da equipe e primeiro contato prático com as ferramentas.",
+        "Solicitação de acessos e mapeamento da solução herdada da equipe anterior.",
+        "Imersão no negócio e nos documentos de suporte (CSVs e PDFs) enviados pelos bancos.",
+        "Proposta de melhorias e pivotagem para cobrir todo o escopo proposto.",
+        "Construção do fluxo automático no VerdiFlows e integração dos ambientes via DataMesh."
       ],
       "results": [
-        "Visão centralizada e navegável do progresso por ano fiscal.",
-        "Consultas assistidas por IA rodando 100% localmente.",
-        "Base reutilizável para novas metas e projetos sem retrabalho."
+        "Documentação da solução e diagrama funcional do processo.",
+        "Fluxo VerdiFlows integrando ingestão por e-mail e upload manual, com atuação no Google Drive e planilhas.",
+        "Ambiente DataMesh integrador: conecta BigQuery, Gmail e VerdiFlows.",
+        "Arquitetura de extração e tratamento de dados com tabela no BigQuery centralizando os MtM de 7 bancos.",
+        "Redução no tempo de fechamento mensal: 3h => 10-15min (73.92% de acurácia)."
+      ]
+    }
+  ],
+  "trajectory": [
+    {
+      "id": "traj-accenture-start",
+      "date": "2025-10-06",
+      "type": "accenture-admission",
+      "title": "Entrada na Accenture",
+      "company": "Accenture",
+      "project": "Onboarding & Alocação",
+      "description": "Início da jornada na Accenture: onboarding, primeiros treinamentos e alocação inicial.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Jean Pierre Mello", "role": "Mentor de onboarding" },
+        { "name": "Melody Ferreyra", "role": "Mentor de onboarding" },
+        { "name": "Macarena Datwiler", "role": "Mentor de onboarding" },
+        { "name": "Patri Bezerra", "role": "Mentor de onboarding" }
       ]
     },
     {
-      "id": "proj-verdi-flows",
-      "title": "Integração de Alertas — Verdi-Flows",
-      "subtitle": "Automação de notificações para entrega Meli/Accenture",
-      "period": "FY26",
-      "banner": "https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1600&q=80",
-      "description": "Fluxo de automação para disparo de alertas por e-mail a partir de eventos de negócio, construído sobre a plataforma Verdi-Flows e orquestrado com N8N. O objetivo é reduzir o tempo de resposta a ocorrências e padronizar a comunicação com os times envolvidos na entrega.",
-      "tools": [
-        { "name": "N8N", "logo": "n8n", "color": "EA4B71", "logoColor": "white" },
-        { "name": "Node.js", "logo": "nodedotjs", "color": "5FA04E", "logoColor": "white" },
-        { "name": "REST API", "logo": "openapiinitiative", "color": "6BA539", "logoColor": "white" },
-        { "name": "SMTP", "logo": "maildotru", "color": "005FF9", "logoColor": "white" }
-      ],
-      "challenges": [
-        "Mapear os gatilhos de negócio que justificam o envio de um alerta.",
-        "Garantir entregabilidade e evitar duplicidade de notificações.",
-        "Integrar a plataforma Verdi-Flows a serviços externos de e-mail."
-      ],
-      "evolution": [
-        "Levantamento do requisito de alertas junto aos stakeholders.",
-        "Prototipagem do fluxo de disparo no ambiente Verdi-Flows.",
-        "Sessão de overview da solução com o time de desenvolvimento."
-      ],
-      "results": [
-        "Notificações automáticas para eventos críticos da entrega.",
-        "Padronização da comunicação entre os times.",
-        "Redução do trabalho manual de acompanhamento."
+      "id": "traj-itau-start",
+      "date": "2025-10-20",
+      "endDate": "2025-12-19",
+      "type": "project-start",
+      "title": "Alocação no Itaú: TEC - Novo Pool - Demanda",
+      "company": "ITAU UNIBANCO",
+      "project": "Analista AD de Banco de Dados",
+      "description": "Início da jornada na conta Itaú: onboarding, treinamentos e alocação inicial. Atividade envolve avaliação de modelos lógicos para bancos de dados onde busca-se garantir conformidade com regras de negócio e boas práticas na construção dos modelos.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Thais Rocha", "role": "BI Engineering Associate Manager" },
+        { "name": "Marcos Antonio Neto", "role": "Data Eng, Mgmt & Governance Sr Analyst" },
+        { "name": "Camila Almeida Das Candeias", "role": "Data Eng, Mgmt & Governance Analyst" },
+        { "name": "Ana Maria M. Braga", "role": "BI Engineering Analyst" },
+        { "name": "Gabriela Gouveia Mota", "role": "Data Eng, Mgmt & Governance Associate" }
       ]
+    },
+    {
+      "id": "traj-meli-start",
+      "date": "2026-01-01",
+      "endDate": "2026-01-30",
+      "type": "project-start",
+      "title": "Alocação no Mercado Livre: Equipe MELITAX",
+      "company": "MERCADO LIBRE",
+      "project": "Relatório de TAX: PIS & COFINS",
+      "description": "Início da jornada na conta Mercado Livre: alocação inicial e liberação de acessos. O projeto envolveu o monitoramento de taxas PIS e COFINS para que o MELI tivesse controle sobre movimentações econômicas.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Daniel H. Ciolfi", "role": "Tech Lead" },
+        { "name": "Bruno Farias Da Rocha", "role": "Data Eng, Mgmt & Governance Specialist" },
+        { "name": "Marianne Tone", "role": "Custom Software Engineering Manager" },
+        { "name": "Ana Maria M. Braga", "role": "BI Engineering Analyst" },
+        { "name": "Laryssa G. Silva", "role": "Data Eng, Mgmt & Governance Analyst" },
+        { "name": "Jose Emilio Braz", "role": "Data Engineer" },
+        { "name": "Marcos Antonio Neto", "role": "Data Eng, Mgmt & Governance Sr Analyst" }
+      ]
+    },
+    {
+      "id": "traj-meli-bolt",
+      "date": "2026-02-02",
+      "endDate": "2026-03-31",
+      "type": "project-start",
+      "title": "Alocação no Time MELIBOLT",
+      "company": "MERCADO LIBRE",
+      "project": "Projeto Simplifica: Meli Data BR Finanzas",
+      "description": "Mudança de equipe e projeto. O projeto envolve criação de automação para reporte financeiro MtM (Market to Market) onde deve-se acessar informações de diversas fontes (PDF, Email, Sheets) e múltiplos bancos e centralizá-los em base de dados única no BigQuery.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Renato Borges", "role": "Data Eng, Mgmt & Governance Manager" },
+        { "name": "Lucas Vinicius Bezerra Burgos", "role": "Data Eng, Mgmt & Governance Sr Analyst" },
+        { "name": "Lucas de Paula Mendonca", "role": "Data Eng, Mgmt & Governance Associate" },
+        { "name": "Victor Yuji Tamashiro", "role": "Data Eng, Mgmt & Governance Specialist" }
+      ]
+    },
+    {
+      "id": "traj-meli-labai",
+      "date": "2026-04-01",
+      "endDate": "2026-07-17",
+      "type": "project-start",
+      "title": "Alocação no Laboratório de IA",
+      "company": "ACCENTURE/MERCADO LIBRE",
+      "project": "Engenharia de Soluções",
+      "description": "Mudança de equipe e projeto. A equipe é estruturada para identificar oportunidades e propor soluções com IA para elevar valor da entrega, resolver problemas complexos e fomentar inovação.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Felipe Gallinari", "role": "AI/ML Computational Science Manager" },
+        { "name": "Romeu Sebastiao Ribeiro Neto", "role": "Business Architecture Associate Manager" },
+        { "name": "Michele Chalega", "role": "AI/ML Computational Science Specialist" },
+        { "name": "Victor Marquesim", "role": "AI/ML Computational Science Specialist" },
+        { "name": "Aluisio Goncalves Cardoso Neto", "role": "Custom Software Engineering Associate" },
+        { "name": "Rosenilda Santos da Silva", "role": "AI/ML Computational Science Associate" },
+        { "name": "Luiza Maria Pereira Sobreira Tine", "role": "AI/ML Computational Science Sr Analyst" },
+        { "name": "Lucas Torres Silva", "role": "AI/ML Computational Science Associate" },
+        { "name": "Guillermo Jesus Camahuali Privat", "role": "Inside Sales Account Rep Analyst" }
+      ]
+    },
+    {
+      "id": "traj-mercado-pago-rrbrsail",
+      "date": "2026-07-20",
+      "endDate": "2027-01-29",
+      "type": "project-start",
+      "title": "Alocação no Mercado Pago: RR Brasil",
+      "company": "ACCENTURE/MERCADO PAGO",
+      "project": "Reportes Regulatórios Brasil",
+      "description": "Início da jornada na conta Mercado Pago. Projeto envolve criação de painel central para reunir informações sobre os Reportes Regulatórios do Brasil.",
+      "team": [
+        { "name": "Alexandre E. Junior", "role": "People Lead" },
+        { "name": "Felipe Gallinari", "role": "AI/ML Computational Science Manager" }
+      ]
+    },
+    {
+      "id": "traj-mtm-delivery",
+      "date": "2026-03-25",
+      "type": "milestone",
+      "title": "Entrega da automação de Conciliação MtM",
+      "company": "MERCADO LIBRE",
+      "project": "Conciliação MtM Derivativos",
+      "description": "Entrega do fluxo automatizado de apuração de MtM de derivativos, reduzindo o fechamento mensal de ~3h para 10-15min."
+    },
+    {
+      "id": "traj-meetricx-delivery",
+      "date": "2026-04-22",
+      "type": "milestone",
+      "title": "Entrega do MeetriCX",
+      "company": "MERCADO LIBRE",
+      "project": "Qualidade de Transcrições",
+      "description": "Entrega do analisador de qualidade de transcrições de reuniões Google Meets, MeetriCX. Automação capaz de intrepretar transcrições, avaliá-la com base lista de requisitos e exibição de KPIs via Dashboard."
     }
   ]
 }

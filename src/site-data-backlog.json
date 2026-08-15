@@ -1,0 +1,26 @@
+[
+    {
+        "id": "traj-ai-systems",
+        "date": "2026-05-10",
+        "type": "achievement",
+        "title": "Sistemas de IA em produção",
+        "company": "Mercado Livre",
+        "description": "Construção de sistemas de IA (extrator de reportes, avaliação de qualidade e agente conversacional). [EXEMPLO — edite com seus dados reais]"
+    },
+    {
+        "id": "traj-fy27-example",
+        "date": "2026-10-01",
+        "endDate": "2027-03-31",
+        "type": "project-start",
+        "title": "Novo projeto (exemplo FY27)",
+        "company": "Mercado Livre",
+        "project": "Projeto Exemplo FY27",
+        "description": "Evento de exemplo para ilustrar a trajetória de um novo ano fiscal (FY27, Q1) com início e término definidos. [EXEMPLO — edite ou remova]",
+        "team": [
+        { "name": "Colega A", "role": "Tech Lead" },
+        { "name": "Colega B", "role": "Data Engineer" },
+        { "name": "Colega C", "role": "Analista" },
+        { "name": "Colega D", "role": "Product Owner" }
+        ]
+    }
+]
