@@ -1057,6 +1057,18 @@ h1 {
   display: block;
 }
 
+.bot-avatar-emoji {
+  line-height: 1;
+}
+
+.chat-panel-avatar .bot-avatar-emoji {
+  font-size: 22px;
+}
+
+.chat-avatar .bot-avatar-emoji {
+  font-size: 18px;
+}
+
 .chat-panel-heading {
   display: flex;
   flex-direction: column;

@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react';
 import ChatPanel from './ChatPanel';
+import BotAvatar from './BotAvatar';
 import { checkOllamaAvailable } from './agent';
-
-const AVATAR_SRC = import.meta.env.BASE_URL + 'assets/brand/acc-gt-white.svg';
 
 function ChatBalloon() {
   const [open, setOpen] = useState(false);
@@ -41,7 +40,7 @@ function ChatBalloon() {
         <div className="chat-balloon-panel">
           <div className="chat-panel-header">
             <div className="chat-panel-avatar">
-              <img src={AVATAR_SRC} alt="" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+              <BotAvatar />
             </div>
             <div className="chat-panel-heading">
               <strong>Agente conversacional</strong>
