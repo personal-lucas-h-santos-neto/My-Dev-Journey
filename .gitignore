@@ -11,3 +11,4 @@ yarn-error.log*
 identidade_visual
 src/assets/fonts/
 src/assets/brand/
+public/assets/brand/

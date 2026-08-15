@@ -2,8 +2,6 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import ChatBalloon from './ChatBalloon';
 import Vitrine from './Vitrine';
 import Trajetoria from './Trajetoria';
-import accLogo from './assets/brand/acc-logo.svg';
-import accLogoWhite from './assets/brand/acc-logo-white.svg';
 import siteData from './site-data.json';
 
 const BASE = import.meta.env.BASE_URL;
@@ -257,10 +255,12 @@ function App() {
         <div className="app-header-inner">
           <div className="brand-bar">
             <img
-              src={theme === 'dark' ? accLogoWhite : accLogo}
+              src={resolveImage(theme === 'dark' ? 'assets/brand/acc-logo-white.svg' : 'assets/brand/acc-logo.svg')}
               alt="Accenture"
               className="brand-logo"
+              onError={(e) => { e.currentTarget.style.display = 'none'; e.currentTarget.nextElementSibling?.classList.add('brand-logo-fallback-visible'); }}
             />
+            <span className="brand-logo-fallback">Accenture</span>
             <span className="brand-divider" />
             <span className="brand-tagline">Let there be change</span>
           </div>

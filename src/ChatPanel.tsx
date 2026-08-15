@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
-import accGtWhite from './assets/brand/acc-gt-white.svg';
 import { askAgent } from './agent';
+
+const AVATAR_SRC = import.meta.env.BASE_URL + 'assets/brand/acc-gt-white.svg';
 
 type SourceType = 'ollama' | 'fallback' | 'unknown' | null;
 
@@ -70,7 +71,7 @@ function ChatPanel() {
         {answer ? (
           <div className="chat-msg chat-msg--bot">
             <div className="chat-avatar">
-              <img src={accGtWhite} alt="" />
+              <img src={AVATAR_SRC} alt="" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </div>
             <div className="chat-bubble chat-bubble--bot">
               <div className="response-header">
@@ -89,7 +90,7 @@ function ChatPanel() {
         ) : loading ? (
           <div className="chat-msg chat-msg--bot">
             <div className="chat-avatar">
-              <img src={accGtWhite} alt="" />
+              <img src={AVATAR_SRC} alt="" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
             </div>
             <div className="chat-bubble chat-bubble--bot">
               <div className="chat-typing">

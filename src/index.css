@@ -1,65 +1,4 @@
-/* ==== Accenture brand typefaces ==== */
-@font-face {
-  font-family: 'Graphik';
-  src: url('./assets/fonts/Graphik-Light.woff2') format('woff2'),
-    url('./assets/fonts/Graphik-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Graphik';
-  src: url('./assets/fonts/Graphik-Regular.woff2') format('woff2'),
-    url('./assets/fonts/Graphik-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Graphik';
-  src: url('./assets/fonts/Graphik-Medium.woff2') format('woff2'),
-    url('./assets/fonts/Graphik-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Graphik';
-  src: url('./assets/fonts/Graphik-Semibold.woff2') format('woff2'),
-    url('./assets/fonts/Graphik-Semibold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Graphik';
-  src: url('./assets/fonts/Graphik-Bold.woff2') format('woff2'),
-    url('./assets/fonts/Graphik-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Sectra Fine';
-  src: url('./assets/fonts/GT-Sectra-Fine-Regular.otf') format('opentype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Sectra Fine';
-  src: url('./assets/fonts/GT-Sectra-Fine-Medium.otf') format('opentype');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'GT Sectra Fine';
-  src: url('./assets/fonts/GT-Sectra-Fine-Bold.otf') format('opentype');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
 
 :root {
   /* Accenture brand palette */
@@ -92,7 +31,7 @@
   --header-bg: rgba(255, 255, 255, 0.72);
 
   color-scheme: light;
-  font-family: 'Graphik', 'Inter', system-ui, sans-serif;
+  font-family: 'Inter', system-ui, sans-serif;
   background: var(--bg);
   color: var(--text);
   font-size: 16px;
@@ -349,6 +288,17 @@ button {
   display: block;
 }
 
+.brand-logo-fallback {
+  display: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.brand-logo-fallback-visible {
+  display: block;
+}
+
 .brand-divider {
   width: 1px;
   height: 22px;
@@ -356,7 +306,7 @@ button {
 }
 
 .brand-tagline {
-  font-family: 'GT Sectra Fine', Georgia, serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-style: italic;
   font-size: 0.95rem;
   color: var(--acn-grey);
@@ -412,7 +362,7 @@ h3 {
 }
 
 h1 {
-  font-family: 'GT Sectra Fine', Georgia, serif;
+  font-family: 'Playfair Display', Georgia, serif;
   font-weight: 500;
   letter-spacing: -0.01em;
 }
